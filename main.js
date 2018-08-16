@@ -52,5 +52,5 @@ let shareEl=document.getElementById("share");
 shareEl.addEventListener('click',gotoshare);
 
 function gotoshare(){
-    document.location.href="post.html";
+    document.location.href="posts.html";
 }
