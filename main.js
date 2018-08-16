@@ -53,4 +53,8 @@ shareEl.addEventListener('click',gotoshare);
 
 function gotoshare(){
     document.location.href="posts.html";
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b3870c3d857b9738179d2ca49cfde4299e93a271
