@@ -6,7 +6,14 @@ function goToTracks(){
 } 
  
 var page = document.getElementById('page');
-var sections = page.getElementsByTagName('section');
+if(page){ 
+    page.style.transition = transition;
+    page.onclick = slideDown;
+    page.style.transition = transition;
+    page.onclick = slideDown;
+    
+    var sections = page.getElementsByTagName('section');
+
 // This transition can be defined in the CSS if preferred.
 var transition = 'top .8s cubic-bezier(0.77, 0, 0.175, 1)';
 page.style.transition = transition;
@@ -39,4 +46,11 @@ function slideDown(e) {
     
     // This timeout length should match the CSS animation time (.8s).
   }, 800);
+}  }
+
+let shareEl=document.getElementById("share"); 
+shareEl.addEventListener('click',gotoshare);
+
+function gotoshare(){
+    document.location.href="post.html";
 }
